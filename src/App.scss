@@ -1,6 +1,13 @@
-.conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+$padding: 0 100px;
+
+.app {
   min-height: 100vh;
+  background-color: #fff;
+}
+.header {
+  padding: $padding;
+}
+.footer {
+  text-align: center;
+  background-color: #fff;
 }
