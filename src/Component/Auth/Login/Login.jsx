@@ -8,7 +8,7 @@ import { login } from "../../../Redux/auth/autnReducer";
 import profileRedirect from "../../../HOC/profileRedirect";
 import { getErrorMessage } from "../../../Redux/auth/authSelector";
 
-const Login = () => {
+const Login = profileRedirect(() => {
   return (
     <div className={style.inner}>
       <div className={style.content}>
@@ -19,7 +19,7 @@ const Login = () => {
       <img className={style.loginImg} src={loginImg} alt="" />
     </div>
   );
-};
+});
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -64,4 +64,4 @@ const LoginForm = () => {
   );
 };
 
-export default profileRedirect(Login);
+export default Login;

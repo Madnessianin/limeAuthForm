@@ -5,7 +5,7 @@ import ava from "./../../assets/Img/avatar.jpg";
 import { useSelector } from "react-redux";
 import { getLogin } from "../../Redux/auth/authSelector";
 
-const Profile = () => {
+const Profile = authRedirect(() => {
   const login = useSelector((state) => getLogin(state));
   return (
     <div className={style.inner}>
@@ -33,6 +33,6 @@ const Profile = () => {
       </div>
     </div>
   );
-};
+});
 
-export default authRedirect(Profile);
+export default Profile;
