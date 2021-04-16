@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "homepage": "https://madnessianin.github.io/ReactSocialNetwork/",
+  "homepage": "https://madnessianin.github.io/limeAuthForm/",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
