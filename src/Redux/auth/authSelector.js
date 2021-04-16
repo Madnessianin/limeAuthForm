@@ -5,3 +5,7 @@ export const getIsAuth = (state) => {
 export const getErrorMessage = (state) => {
   return state.auth.message;
 };
+
+export const getLogin = (state) => {
+    return state.auth.login;
+}

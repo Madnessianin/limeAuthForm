@@ -1,0 +1,33 @@
+.inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.avatar {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: rgb(233, 234, 250);
+}
+
+.description {
+    margin-left: 20px;
+    padding: 20px;
+    background-color: rgb(233, 234, 250);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+}
