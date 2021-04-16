@@ -4,7 +4,7 @@ import { Layout, Menu } from "antd";
 
 const { Header } = Layout;
 
-const MyHeader = ({className}) => {
+const MyHeader = ({ selector }) => {
   const url = useLocation();
   const [urlKey, setUrlKey] = useState(url.pathname);
   useEffect(() => {
@@ -17,21 +17,17 @@ const MyHeader = ({className}) => {
         setUrlKey("3");
         break;
       }
-      case "/": {
+      case "/main": {
         setUrlKey("1");
         break;
       }
     }
   }, [url]);
   return (
-    <Header className={className}>
-      <Menu
-        mode="horizontal"
-        theme="dark"
-        selectedKeys={[urlKey]}
-      >
+    <Header className={selector}>
+      <Menu mode="horizontal" theme="dark" selectedKeys={[urlKey]}>
         <Menu.Item key="1">
-          <Link to="/">Главная</Link>
+          <Link to="/main">Главная</Link>
         </Menu.Item>
         <Menu.Item key="2">
           <Link to="/profile">Мой профиль</Link>

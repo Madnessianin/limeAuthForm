@@ -172,6 +172,18 @@ module.exports = {
           from: path.resolve(__dirname, "./static/favicon.ico"),
           to: path.resolve(__dirname, "./dist"),
         },
+        {
+          from: path.resolve(__dirname, "./static/img/newsOne.jpg"),
+          to: path.resolve(__dirname, "./dist/img"),
+        },
+        {
+          from: path.resolve(__dirname, "./static/img/newsTwo.jpg"),
+          to: path.resolve(__dirname, "./dist/img"),
+        },
+        {
+          from: path.resolve(__dirname, "./static/img/newsThree.jpg"),
+          to: path.resolve(__dirname, "./dist/img"),
+        }
       ],
     }),
     new MiniCssExtractPlugin({

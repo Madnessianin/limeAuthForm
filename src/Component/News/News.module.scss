@@ -1,0 +1,28 @@
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.content {
+  width: 45%;
+  padding: 20px;
+  background-color: rgb(233, 234, 250);
+}
+.img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}

@@ -1,14 +1,10 @@
 .inner {
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-.content,
-.inner {
   display: flex;
   align-items: center;
 }
 .content {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 45%;
@@ -26,7 +22,8 @@
   text-align: center;
 }
 .loginImg {
-  width: 55%;
+  width: 65%;
+  min-height: 100vh;
 }
 .form {
   width: 50%;
@@ -35,10 +32,15 @@
 .input {
   margin-bottom: 10px;
   height: 50px;
+  font-size: 18px;
+  font-weight: 400;
   border: none;
   border-bottom: 2px solid #ccc;
 }
-
+.btns {
+  display: flex;
+  justify-content: center;
+}
 .btnItem {
   width: 65%;
   height: 50px;
