@@ -7,5 +7,5 @@ export const getErrorMessage = (state) => {
 };
 
 export const getLogin = (state) => {
-    return state.auth.login;
-}
+  return state.auth.login;
+};
